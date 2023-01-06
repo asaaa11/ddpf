@@ -1,0 +1,22 @@
+# 服务器端配置
+server:
+  # 服务端口
+  port: 9527
+spring:
+  # 数据源配置
+  datasource:
+    # 连接数据库的URL
+    url: jdbc:mysql://221.233.196.5:9856/myerp?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    # 连接数据库的用户名
+    username: root
+    # 连接数据库的密码
+    password: JLPCB8003
+  # 关闭控制台spring运行的固定系统日志
+  main:
+    banner-mode: off
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    # 关闭mybatis-plus运行的固定系统日志
+    banner: false

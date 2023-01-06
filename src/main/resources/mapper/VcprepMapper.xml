@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.mapper.VcprepMapper">
+
+    <resultMap id="BaseResultMap" type="demo.domain.Vcprep">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="liaohao" column="liaohao" jdbcType="VARCHAR"/>
+            <result property="LOT_NO" column="LOT_NO" jdbcType="VARCHAR"/>
+            <result property="width" column="width" jdbcType="VARCHAR"/>
+            <result property="height" column="height" jdbcType="VARCHAR"/>
+            <result property="plate_thickness" column="Plate_thickness" jdbcType="VARCHAR"/>
+            <result property="copper_plating_time" column="Copper_plating_time" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive1" column="ch_ASD_positive1" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive2" column="ch_ASD_positive2" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive3" column="ch_ASD_positive3" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive4" column="ch_ASD_positive4" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive5" column="ch_ASD_positive5" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive6" column="ch_ASD_positive6" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive7" column="ch_ASD_positive7" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive8" column="ch_ASD_positive8" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive9" column="ch_ASD_positive9" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive10" column="ch_ASD_positive10" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive11" column="ch_ASD_positive11" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive12" column="ch_ASD_positive12" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive13" column="ch_ASD_positive13" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive14" column="ch_ASD_positive14" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive15" column="ch_ASD_positive15" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive16" column="ch_ASD_positive16" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive17" column="ch_ASD_positive17" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive18" column="ch_ASD_positive18" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive19" column="ch_ASD_positive19" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_positive20" column="ch_ASD_positive20" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind1" column="ch_ASD_behind1" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind2" column="ch_ASD_behind2" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind3" column="ch_ASD_behind3" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind4" column="ch_ASD_behind4" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind5" column="ch_ASD_behind5" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind6" column="ch_ASD_behind6" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind7" column="ch_ASD_behind7" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind8" column="ch_ASD_behind8" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind9" column="ch_ASD_behind9" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind10" column="ch_ASD_behind10" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind11" column="ch_ASD_behind11" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind12" column="ch_ASD_behind12" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind13" column="ch_ASD_behind13" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind14" column="ch_ASD_behind14" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind15" column="ch_ASD_behind15" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind16" column="ch_ASD_behind16" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind17" column="ch_ASD_behind17" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind18" column="ch_ASD_behind18" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind19" column="ch_ASD_behind19" jdbcType="VARCHAR"/>
+            <result property="ch_ASD_behind20" column="ch_ASD_behind20" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,liaohao,LOT_NO,
+        width,height,Plate_thickness,
+        Copper_plating_time,ch_ASD_positive1,ch_ASD_positive2,
+        ch_ASD_positive3,ch_ASD_positive4,ch_ASD_positive5,
+        ch_ASD_positive6,ch_ASD_positive7,ch_ASD_positive8,
+        ch_ASD_positive9,ch_ASD_positive10,ch_ASD_positive11,
+        ch_ASD_positive12,ch_ASD_positive13,ch_ASD_positive14,
+        ch_ASD_positive15,ch_ASD_positive16,ch_ASD_positive17,
+        ch_ASD_positive18,ch_ASD_positive19,ch_ASD_positive20,
+        ch_ASD_behind1,ch_ASD_behind2,ch_ASD_behind3,
+        ch_ASD_behind4,ch_ASD_behind5,ch_ASD_behind6,
+        ch_ASD_behind7,ch_ASD_behind8,ch_ASD_behind9,
+        ch_ASD_behind10,ch_ASD_behind11,ch_ASD_behind12,
+        ch_ASD_behind13,ch_ASD_behind14,ch_ASD_behind15,
+        ch_ASD_behind16,ch_ASD_behind17,ch_ASD_behind18,
+        ch_ASD_behind19,ch_ASD_behind20
+    </sql>
+</mapper>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jlpcb.getXinYedemo.mapper.VppeprodmidataMapper">
+
+    <resultMap id="BaseResultMap" type="com.jlpcb.getXinYedemo.domain.Vppeprodmidata">
+            <result property="techName" column="TechName" jdbcType="VARCHAR"/>
+            <result property="dataID" column="DataID" jdbcType="BIGINT"/>
+            <result property="flowID" column="FlowID" jdbcType="BIGINT"/>
+            <result property="showIndex" column="ShowIndex" jdbcType="INTEGER"/>
+            <result property="createBy" column="CreateBy" jdbcType="VARCHAR"/>
+            <result property="createDate" column="CreateDate" jdbcType="TIMESTAMP"/>
+            <result property="updateDate" column="UpdateDate" jdbcType="TIMESTAMP"/>
+            <result property="version" column="Version" jdbcType="BIGINT"/>
+            <result property="data0" column="Data0" jdbcType="VARCHAR"/>
+            <result property="data1" column="Data1" jdbcType="VARCHAR"/>
+            <result property="data2" column="Data2" jdbcType="VARCHAR"/>
+            <result property="data3" column="Data3" jdbcType="VARCHAR"/>
+            <result property="data4" column="Data4" jdbcType="VARCHAR"/>
+            <result property="data5" column="Data5" jdbcType="VARCHAR"/>
+            <result property="data6" column="Data6" jdbcType="VARCHAR"/>
+            <result property="data7" column="Data7" jdbcType="VARCHAR"/>
+            <result property="data8" column="Data8" jdbcType="VARCHAR"/>
+            <result property="data9" column="Data9" jdbcType="VARCHAR"/>
+            <result property="data10" column="Data10" jdbcType="VARCHAR"/>
+            <result property="data11" column="Data11" jdbcType="VARCHAR"/>
+            <result property="data12" column="Data12" jdbcType="VARCHAR"/>
+            <result property="data13" column="Data13" jdbcType="VARCHAR"/>
+            <result property="data14" column="Data14" jdbcType="VARCHAR"/>
+            <result property="data15" column="Data15" jdbcType="VARCHAR"/>
+            <result property="data16" column="Data16" jdbcType="VARCHAR"/>
+            <result property="data17" column="Data17" jdbcType="VARCHAR"/>
+            <result property="data18" column="Data18" jdbcType="VARCHAR"/>
+            <result property="data19" column="Data19" jdbcType="VARCHAR"/>
+            <result property="data20" column="Data20" jdbcType="VARCHAR"/>
+            <result property="data21" column="Data21" jdbcType="VARCHAR"/>
+            <result property="data22" column="Data22" jdbcType="VARCHAR"/>
+            <result property="data23" column="Data23" jdbcType="VARCHAR"/>
+            <result property="data24" column="Data24" jdbcType="VARCHAR"/>
+            <result property="data25" column="Data25" jdbcType="VARCHAR"/>
+            <result property="data26" column="Data26" jdbcType="VARCHAR"/>
+            <result property="data27" column="Data27" jdbcType="VARCHAR"/>
+            <result property="data28" column="Data28" jdbcType="VARCHAR"/>
+            <result property="data29" column="Data29" jdbcType="VARCHAR"/>
+            <result property="data30" column="Data30" jdbcType="VARCHAR"/>
+            <result property="prodID" column="ProdID" jdbcType="BIGINT"/>
+            <result property="techID" column="TechID" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        TechName,DataID,FlowID,
+        ShowIndex,CreateBy,CreateDate,
+        UpdateDate,Version,Data0,
+        Data1,Data2,Data3,
+        Data4,Data5,Data6,
+        Data7,Data8,Data9,
+        Data10,Data11,Data12,
+        Data13,Data14,Data15,
+        Data16,Data17,Data18,
+        Data19,Data20,Data21,
+        Data22,Data23,Data24,
+        Data25,Data26,Data27,
+        Data28,Data29,Data30,
+        ProdID,TechID
+    </sql>
+</mapper>

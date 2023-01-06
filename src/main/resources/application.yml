@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.168.153.181:1433;databaseName=ReportPlatform;
+    username: sa
+    password: Test1234
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    #设置文件单次上传与请求无大小限制
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+server:
+    # 服务端口
+    port: 9526
+
+#HTML页面配置
+
+
+
+

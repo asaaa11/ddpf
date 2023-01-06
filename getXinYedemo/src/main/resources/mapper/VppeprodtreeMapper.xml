@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jlpcb.getXinYedemo.mapper.VppeprodtreeMapper">
+
+    <resultMap id="BaseResultMap" type="com.jlpcb.getXinYedemo.domain.Vppeprodtree">
+            <result property="id" column="Id" jdbcType="BIGINT"/>
+            <result property="leaf" column="leaf" jdbcType="INTEGER"/>
+            <result property="surfTreaCaption" column="SurfTreaCaption" jdbcType="VARCHAR"/>
+            <result property="prodID" column="ProdID" jdbcType="BIGINT"/>
+            <result property="parentID" column="ParentID" jdbcType="BIGINT"/>
+            <result property="custID" column="CustID" jdbcType="BIGINT"/>
+            <result property="targetCustID" column="TargetCustID" jdbcType="BIGINT"/>
+            <result property="surfTreaID" column="SurfTreaID" jdbcType="BIGINT"/>
+            <result property="quoteID" column="QuoteID" jdbcType="BIGINT"/>
+            <result property="specialtyID" column="SpecialtyID" jdbcType="BIGINT"/>
+            <result property="layer" column="Layer" jdbcType="DECIMAL"/>
+            <result property="fullProdNo" column="FullProdNo" jdbcType="VARCHAR"/>
+            <result property="prodNo" column="ProdNo" jdbcType="VARCHAR"/>
+            <result property="prodVer" column="ProdVer" jdbcType="VARCHAR"/>
+            <result property="innerVer" column="InnerVer" jdbcType="VARCHAR"/>
+            <result property="ABMark" column="ABMark" jdbcType="VARCHAR"/>
+            <result property="innerSide" column="InnerSide" jdbcType="VARCHAR"/>
+            <result property="custProdNo" column="CustProdNo" jdbcType="VARCHAR"/>
+            <result property="PNType" column="PNType" jdbcType="VARCHAR"/>
+            <result property="prodType" column="ProdType" jdbcType="VARCHAR"/>
+            <result property="unit" column="Unit" jdbcType="VARCHAR"/>
+            <result property="currency" column="Currency" jdbcType="VARCHAR"/>
+            <result property="noTaxPrice" column="NoTaxPrice" jdbcType="DECIMAL"/>
+            <result property="contractPrice" column="ContractPrice" jdbcType="DECIMAL"/>
+            <result property="thick" column="Thick" jdbcType="DECIMAL"/>
+            <result property="weight" column="Weight" jdbcType="DECIMAL"/>
+            <result property="setH" column="SetH" jdbcType="DECIMAL"/>
+            <result property="setW" column="SetW" jdbcType="DECIMAL"/>
+            <result property="PCSArea" column="PCSArea" jdbcType="DECIMAL"/>
+            <result property="custPnl" column="CustPnl" jdbcType="BIT"/>
+            <result property="sheetPnl" column="SheetPnl" jdbcType="INTEGER"/>
+            <result property="pnlSet" column="PnlSet" jdbcType="INTEGER"/>
+            <result property="setPcs" column="SetPcs" jdbcType="INTEGER"/>
+            <result property="showOrder" column="ShowOrder" jdbcType="INTEGER"/>
+            <result property="hasChild" column="HasChild" jdbcType="BIT"/>
+            <result property="remark" column="Remark" jdbcType="VARCHAR"/>
+            <result property="PEActive" column="PEActive" jdbcType="BIT"/>
+            <result property="MKTActive" column="MKTActive" jdbcType="BIT"/>
+            <result property="sampPassDate" column="SampPassDate" jdbcType="TIMESTAMP"/>
+            <result property="massProdDate" column="MassProdDate" jdbcType="TIMESTAMP"/>
+            <result property="odrCount" column="OdrCount" jdbcType="INTEGER"/>
+            <result property="createDate" column="CreateDate" jdbcType="TIMESTAMP"/>
+            <result property="createBy" column="CreateBy" jdbcType="VARCHAR"/>
+            <result property="updateDate" column="UpdateDate" jdbcType="TIMESTAMP"/>
+            <result property="bomState" column="BomState" jdbcType="BIGINT"/>
+            <result property="state" column="State" jdbcType="BIGINT"/>
+            <result property="version" column="Version" jdbcType="BIGINT"/>
+            <result property="custNo" column="CustNo" jdbcType="VARCHAR"/>
+            <result property="custName" column="CustName" jdbcType="VARCHAR"/>
+            <result property="custProdNoAdd" column="CustProdNoAdd" jdbcType="VARCHAR"/>
+            <result property="conjunctProdNo" column="ConjunctProdNo" jdbcType="VARCHAR"/>
+            <result property="bardType" column="BardType" jdbcType="VARCHAR"/>
+            <result property="tg" column="Tg" jdbcType="VARCHAR"/>
+            <result property="CTI" column="CTI" jdbcType="VARCHAR"/>
+            <result property="isENV" column="IsENV" jdbcType="BIT"/>
+            <result property="isConsign" column="IsConsign" jdbcType="BIT"/>
+            <result property="isFinish" column="IsFinish" jdbcType="INTEGER"/>
+            <result property="targetName" column="TargetName" jdbcType="VARCHAR"/>
+            <result property="surfTrea1" column="SurfTrea1" jdbcType="VARCHAR"/>
+            <result property="surfTrea2" column="SurfTrea2" jdbcType="VARCHAR"/>
+            <result property="HDI" column="HDI" jdbcType="BIT"/>
+            <result property="HDIStruct" column="HDIStruct" jdbcType="VARCHAR"/>
+            <result property="HF" column="HF" jdbcType="BIT"/>
+            <result property="OEM" column="OEM" jdbcType="VARCHAR"/>
+            <result property="SPC" column="SPC" jdbcType="BIT"/>
+            <result property="scrapRate" column="ScrapRate" jdbcType="DECIMAL"/>
+            <result property="ECNState" column="ECNState" jdbcType="BIGINT"/>
+            <result property="ECNType" column="ECNType" jdbcType="VARCHAR"/>
+            <result property="custUnit" column="CustUnit" jdbcType="VARCHAR"/>
+            <result property="costPrice" column="CostPrice" jdbcType="DECIMAL"/>
+            <result property="copperThick" column="CopperThick" jdbcType="DECIMAL"/>
+            <result property="blindHole" column="BlindHole" jdbcType="BIT"/>
+            <result property="flexible" column="Flexible" jdbcType="BIT"/>
+            <result property="isSafety" column="IsSafety" jdbcType="BIT"/>
+            <result property="quoteState" column="QuoteState" jdbcType="BIGINT"/>
+            <result property="PSWDate" column="PSWDate" jdbcType="TIMESTAMP"/>
+            <result property="THPR" column="THPR" jdbcType="BIT"/>
+            <result property="issActive" column="IssActive" jdbcType="BIT"/>
+            <result property="lotActive" column="LotActive" jdbcType="BIT"/>
+            <result property="PEType" column="PEType" jdbcType="VARCHAR"/>
+            <result property="PEDifficulty" column="PEDifficulty" jdbcType="VARCHAR"/>
+            <result property="PESpecial" column="PESpecial" jdbcType="VARCHAR"/>
+            <result property="PEState" column="PEState" jdbcType="VARCHAR"/>
+            <result property="PERemark" column="PERemark" jdbcType="VARCHAR"/>
+            <result property="PEMark" column="PEMark" jdbcType="VARCHAR"/>
+            <result property="activeRemark" column="ActiveRemark" jdbcType="VARCHAR"/>
+            <result property="targetProdNo" column="TargetProdNo" jdbcType="VARCHAR"/>
+            <result property="targetProdVer" column="TargetProdVer" jdbcType="VARCHAR"/>
+            <result property="PETab" column="PETab" jdbcType="VARCHAR"/>
+            <result property="PTLQty" column="PTLQty" jdbcType="INTEGER"/>
+            <result property="PTLRemark" column="PTLRemark" jdbcType="VARCHAR"/>
+            <result property="targetCustName" column="TargetCustName" jdbcType="VARCHAR"/>
+            <result property="SOWFileName" column="SOWFileName" jdbcType="VARCHAR"/>
+            <result property="otherAdd" column="OtherAdd" jdbcType="VARCHAR"/>
+            <result property="orgName" column="OrgName" jdbcType="VARCHAR"/>
+            <result property="features" column="Features" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        Id,leaf,SurfTreaCaption,
+        ProdID,ParentID,CustID,
+        TargetCustID,SurfTreaID,QuoteID,
+        SpecialtyID,Layer,FullProdNo,
+        ProdNo,ProdVer,InnerVer,
+        ABMark,InnerSide,CustProdNo,
+        PNType,ProdType,Unit,
+        Currency,NoTaxPrice,ContractPrice,
+        Thick,Weight,SetH,
+        SetW,PCSArea,CustPnl,
+        SheetPnl,PnlSet,SetPcs,
+        ShowOrder,HasChild,Remark,
+        PEActive,MKTActive,SampPassDate,
+        MassProdDate,OdrCount,CreateDate,
+        CreateBy,UpdateDate,BomState,
+        State,Version,CustNo,
+        CustName,CustProdNoAdd,ConjunctProdNo,
+        BardType,Tg,CTI,
+        IsENV,IsConsign,IsFinish,
+        TargetName,SurfTrea1,SurfTrea2,
+        HDI,HDIStruct,HF,
+        OEM,SPC,ScrapRate,
+        ECNState,ECNType,CustUnit,
+        CostPrice,CopperThick,BlindHole,
+        Flexible,IsSafety,QuoteState,
+        PSWDate,THPR,IssActive,
+        LotActive,PEType,PEDifficulty,
+        PESpecial,PEState,PERemark,
+        PEMark,ActiveRemark,TargetProdNo,
+        TargetProdVer,PETab,PTLQty,
+        PTLRemark,TargetCustName,SOWFileName,
+        OtherAdd,OrgName,Features
+    </sql>
+</mapper>

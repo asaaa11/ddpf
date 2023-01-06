@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jlpcb.getXinYedemo.mapper.VppeprodmiMapper">
+
+    <resultMap id="BaseResultMap" type="com.jlpcb.getXinYedemo.domain.Vppeprodmi">
+            <result property="techID" column="TechID" jdbcType="BIGINT"/>
+            <result property="MIName" column="MIName" jdbcType="VARCHAR"/>
+            <result property="dataType" column="DataType" jdbcType="VARCHAR"/>
+            <result property="minVal" column="MinVal" jdbcType="VARCHAR"/>
+            <result property="maxVal" column="MaxVal" jdbcType="VARCHAR"/>
+            <result property="defVal" column="DefVal" jdbcType="VARCHAR"/>
+            <result property="showIndex" column="ShowIndex" jdbcType="INTEGER"/>
+            <result property="MIMouldID" column="MIMouldID" jdbcType="BIGINT"/>
+            <result property="prodMiID" column="ProdMiID" jdbcType="BIGINT"/>
+            <result property="flowID" column="FlowID" jdbcType="BIGINT"/>
+            <result property="miData" column="MiData" jdbcType="VARCHAR"/>
+            <result property="createBy" column="CreateBy" jdbcType="VARCHAR"/>
+            <result property="createDate" column="CreateDate" jdbcType="TIMESTAMP"/>
+            <result property="updateDate" column="UpdateDate" jdbcType="TIMESTAMP"/>
+            <result property="state" column="State" jdbcType="BIGINT"/>
+            <result property="version" column="Version" jdbcType="BIGINT"/>
+            <result property="remark" column="Remark" jdbcType="VARCHAR"/>
+            <result property="format" column="Format" jdbcType="VARCHAR"/>
+            <result property="type" column="Type" jdbcType="VARCHAR"/>
+            <result property="allowBlank" column="AllowBlank" jdbcType="BIT"/>
+            <result property="script" column="Script" jdbcType="VARCHAR"/>
+            <result property="bomMouldID" column="BomMouldID" jdbcType="BIGINT"/>
+            <result property="matType" column="MatType" jdbcType="VARCHAR"/>
+            <result property="allowReplace" column="AllowReplace" jdbcType="BIT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        TechID,MIName,DataType,
+        MinVal,MaxVal,DefVal,
+        ShowIndex,MIMouldID,ProdMiID,
+        FlowID,MiData,CreateBy,
+        CreateDate,UpdateDate,State,
+        Version,Remark,Format,
+        Type,AllowBlank,Script,
+        BomMouldID,MatType,AllowReplace
+    </sql>
+</mapper>

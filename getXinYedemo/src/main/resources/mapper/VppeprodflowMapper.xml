@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jlpcb.getXinYedemo.mapper.VppeprodflowMapper">
+
+    <resultMap id="BaseResultMap" type="com.jlpcb.getXinYedemo.domain.Vppeprodflow">
+            <result property="flowID" column="FlowID" jdbcType="BIGINT"/>
+            <result property="prodID" column="ProdID" jdbcType="BIGINT"/>
+            <result property="techID" column="TechID" jdbcType="BIGINT"/>
+            <result property="showIndex" column="ShowIndex" jdbcType="INTEGER"/>
+            <result property="state" column="State" jdbcType="BIGINT"/>
+            <result property="createBy" column="CreateBy" jdbcType="VARCHAR"/>
+            <result property="createDate" column="CreateDate" jdbcType="TIMESTAMP"/>
+            <result property="updateDate" column="UpdateDate" jdbcType="TIMESTAMP"/>
+            <result property="version" column="Version" jdbcType="BIGINT"/>
+            <result property="techName" column="TechName" jdbcType="VARCHAR"/>
+            <result property="techType" column="TechType" jdbcType="INTEGER"/>
+            <result property="remark" column="Remark" jdbcType="VARCHAR"/>
+            <result property="passOver" column="PassOver" jdbcType="BIT"/>
+            <result property="IPQC" column="IPQC" jdbcType="BIT"/>
+            <result property="audBy0" column="AudBy0" jdbcType="VARCHAR"/>
+            <result property="audBy1" column="AudBy1" jdbcType="VARCHAR"/>
+            <result property="audBy2" column="AudBy2" jdbcType="VARCHAR"/>
+            <result property="audBy3" column="AudBy3" jdbcType="VARCHAR"/>
+            <result property="audBy4" column="AudBy4" jdbcType="VARCHAR"/>
+            <result property="MILinkId" column="MILinkId" jdbcType="BIGINT"/>
+            <result property="sourceProdID" column="SourceProdID" jdbcType="BIGINT"/>
+            <result property="sourceProdNo" column="SourceProdNo" jdbcType="VARCHAR"/>
+            <result property="sourceProdVer" column="SourceProdVer" jdbcType="VARCHAR"/>
+            <result property="sourceInnerVer" column="SourceInnerVer" jdbcType="VARCHAR"/>
+            <result property="sourceABMark" column="SourceABMark" jdbcType="VARCHAR"/>
+            <result property="sourceInnerSide" column="SourceInnerSide" jdbcType="VARCHAR"/>
+            <result property="techRemark" column="TechRemark" jdbcType="VARCHAR"/>
+            <result property="workUnit" column="WorkUnit" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        FlowID,ProdID,TechID,
+        ShowIndex,State,CreateBy,
+        CreateDate,UpdateDate,Version,
+        TechName,TechType,Remark,
+        PassOver,IPQC,AudBy0,
+        AudBy1,AudBy2,AudBy3,
+        AudBy4,MILinkId,SourceProdID,
+        SourceProdNo,SourceProdVer,SourceInnerVer,
+        SourceABMark,SourceInnerSide,TechRemark,
+        WorkUnit
+    </sql>
+</mapper>
